@@ -20,18 +20,17 @@ estudando *aluno = (estudando*)malloc(N*sizeof(estudando));
 
 for ( count = 0; count < N; count++)
 {
-printf("\n=========================================================================================================\n");
-printf("\t");       printf("qual o nome do aluno\n");
-printf("\t");       scanf(" %254[^\n]s",aluno->nome);
-printf("\t");       printf("qual o numero da matricula do aluno\n");
-printf("\t");       scanf("%d",&aluno->matricula);
-printf("\t");       printf("qual o periodo do aluno\n");
-printf("\t");       scanf("%d",&aluno->periodo);
-printf("\t");       printf("qual a turma do aluno\n");
-printf("\t");       scanf("%d",&aluno->turma);
-printf("\t");       printf("qual o curso do aluno\n");
-printf("\t");       scanf(" %99[^\n]s",aluno->curso);
-printf("=========================================================================================================\n");
+printf("\n===============================================\n");
+printf("qual o nome do aluno\n");
+scanf(" %254[^\n]s",aluno->nome);
+printf("qual o numero da matricula do aluno\n");
+scanf("%d",&aluno->matricula);
+scanf("%d",&aluno->periodo);
+printf("qual a turma do aluno\n");
+scanf("%d",&aluno->turma);
+printf("qual o curso do aluno\n");
+scanf(" %99[^\n]s",aluno->curso);
+printf("=================================================\n");
 }
 
 system("cls");
