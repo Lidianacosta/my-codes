@@ -11,6 +11,13 @@ int main (void){
     int cont;
     int *v = (int*)malloc(N*sizeof(int));
 
+    if (v == NULL)
+    {
+        printf("ERRO");
+        exit(1);
+    }
+    
+
     for (cont = 0; cont < N; cont++)
     {
         *(v + cont) = cont;
