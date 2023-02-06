@@ -14,7 +14,6 @@ scanf(" %[^\n]s",matriz[linha]);
 printf("sua matriz ta aqui\n");
 for(linha = 0; linha<m ;linha++){
 
-
 printf("%s\n",matriz[linha]);
 
 
@@ -35,7 +34,6 @@ for(linha = 0;linha<m;linha++){
 
                 soma_costas++;
             }
-        
         }       
     }
 }
@@ -70,25 +68,18 @@ int main(void)
         printf("erro");
         exit(1);
     }
-
     }
 //============================================
 
     pedir_o_mapa(m,n,mapa);
     verifica_costa(m,n,mapa);
 
-
 //============================================
     for(cont = 0; cont < m; cont++) {
-
         free(mapa[cont]);
-
     }
 
-
  free(mapa);
-
-
 
     return(0);
 }
