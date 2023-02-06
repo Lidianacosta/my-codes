@@ -31,7 +31,7 @@ for(linha = 0;linha<m;linha++){
 
         if(matriz[linha][coluna] == '#'){
 
-            if (matriz[linha][coluna +1] == "." || matriz[linha][coluna -1] == "." || matriz[linha + 1][coluna] == "." || matriz[linha - 1][coluna] == "."){
+            if (matriz[linha][coluna +1] == '.' || matriz[linha][coluna -1] == '.' || matriz[linha + 1][coluna] == '.' || matriz[linha - 1][coluna] == '.'){
 
                 soma_costas++;
             }
@@ -75,7 +75,7 @@ int main(void)
 //============================================
 
     pedir_o_mapa(m,n,mapa);
-    verifica_costa(m,n,pedir_o_mapa);
+    verifica_costa(m,n,mapa);
 
 
 //============================================
