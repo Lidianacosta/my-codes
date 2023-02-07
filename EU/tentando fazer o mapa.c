@@ -27,25 +27,25 @@
 //===================================================================================================================
 //                                tava so testando
 
-//void pedir_o_mapa(int m,int n, char **matriz){
-//
-//int linha ,coluna;
-//printf("mostre como e seu mapa digite '.' para mar e '#'para terra\n");
-//for(linha = 0; linha<m ;linha++){
-//
-//scanf(" %[^\n]s",matriz[linha]);
-//
-//}
-//
-//printf("sua matriz ta aqui\n");
-//for(linha = 0; linha<m ;linha++){
-//
-//
-//printf("%s\n",matriz[linha]);
-//
-//
-//}
-//}
+void pedir_o_mapa(int m,int n, char **matriz){
+
+int linha ,coluna;
+printf("mostre como e seu mapa digite '.' para mar e '#'para terra\n");
+for(linha = 0; linha<m ;linha++){
+
+scanf(" %[^\n]s",matriz[linha]);
+
+}
+
+printf("sua matriz ta aqui\n");
+for(linha = 0; linha<m ;linha++){
+
+
+printf("%s\n",matriz[linha]);
+
+
+}
+}
 
 //================================================================================================================
 
