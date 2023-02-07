@@ -58,7 +58,7 @@ for(linha = 0;linha<m;linha++){
                 if (matriz[linha][coluna +1] == '.' || matriz[linha][coluna -1] == '.' || matriz[linha + 1][coluna] == '.' || matriz[linha - 1][coluna] == '.'){
                 soma_costas++;
                 }
-            }
+            
 //=================================================================================================================================================================================
         // verificando a borda 'linha' (m -1) de baixo e coluna == 0 e coluna == (n-1);
         }else if (linha == (m-1)){
@@ -71,7 +71,7 @@ for(linha = 0;linha<m;linha++){
 
             }else if(coluna == 0){
 
-                    if ( matriz[linha][coluna +1] == '.'  && matriz[linha -1][coluna ]){
+                    if ( matriz[linha][coluna +1] == '.'  && matriz[linha -1][coluna]){
 
                      soma_costas++;
 
@@ -79,36 +79,40 @@ for(linha = 0;linha<m;linha++){
 
             }else if(coluna == (n-1)){
 
-                    if ( matriz[linha][coluna -1] == '.'  && matriz[linha -1][coluna ]){
+                    if ( matriz[linha][coluna -1] == '.'  && matriz[linha -1][coluna]){
 
                      soma_costas++;
 
                     }
-
              }
 
  //==================================================================================================================================================================================           
             // verificando linha 0
         }else if (linha == 0){
               
-              if()
+            if(coluna != (n-1) && coluna != 0){
               
-                if (matriz[linha][coluna +1] == '.' ||  matriz[linha + 1][coluna] == '.' ){
+                if (matriz[linha][coluna +1] == '.' ||  matriz[linha][coluna -1] == '.' || matriz[linha + 1][coluna ] == '.'){
                 soma_costas++;
                 }
             
+            }else if(coluna == 0){
 
+                if (matriz[linha][coluna +1] == '.' ||  matriz[linha + 1][coluna] == '.' ){
+                soma_costas++;
+                }
 
+            }else if(coluna == (n-1)){
 
+                if (matriz[linha][coluna -1] == '.' ||  matriz[linha + 1][coluna] == '.' ){
+                soma_costas++;
+                }
 
-
+            }     
 //======================================================================================================================================================================================
         }
 
-
-
-
-
+      }
     }
 }
 
