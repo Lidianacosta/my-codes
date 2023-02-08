@@ -39,8 +39,8 @@ int main(void){
 void mostra(int n ,Dados_funcionario *f){
     int count;
     for(count = 0 ; count < n ; count++){
-        printf("%s\n",f->nome_fucionario);
-        printf("%f\n",f->salario);
-        printf("%s\n",f->cargo);
+        printf("%s\n",f[count].nome_fucionario);
+        printf("%f\n",f[count].salario);
+        printf("%s\n",f[count].cargo);
     }
  }
