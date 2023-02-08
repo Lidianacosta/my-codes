@@ -28,11 +28,11 @@ int main(void){
      int count;
      for(count = 0 ; count < n ; count++){
         printf("digite o nome do funcionario\n");
-        scanf(" %[^\n]s",f->nome_fucionario);
+        scanf(" %[^\n]s",f[count].nome_fucionario);
         printf("digite o quanto o funcionario recebe\n");
-        scanf("%f",&f->salario);
+        scanf("%f",&f[count].salario);
         printf("digite o qual o cargo do funcionario\n");
-        scanf(" %[^\n]s",f->cargo);
+        scanf(" %[^\n]s",f[count].cargo);
      }
  }
 
