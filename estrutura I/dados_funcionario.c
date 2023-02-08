@@ -17,13 +17,8 @@ int main(void){
     Dados_funcionario *funcionarios = (Dados_funcionario*)malloc(n * sizeof(Dados_funcionario));
 
     cadastra(n,funcionarios);
-
-    for(count = 0 ; count < n ; count++){
-        printf("%s\n",funcionarios->nome_fucionario);
-        printf("%f\n",funcionarios->salario);
-        printf("%s\n",funcionarios->cargo);
-    }
-
+    mostra(n,funcionarios);
+    
     free(funcionarios);
     return(0);
 }
@@ -38,4 +33,13 @@ int main(void){
         printf("digite o qual o cargo do funcionario\n");
         scanf(" %[^\n]s",f->cargo);
      }
+ }
+
+void mostra(int n ,Dados_funcionario *f){
+    int count;
+    for(count = 0 ; count < n ; count++){
+        printf("%s\n",f->nome_fucionario);
+        printf("%f\n",f->salario);
+        printf("%s\n",f->cargo);
+    }
  }
