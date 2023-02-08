@@ -8,6 +8,7 @@ typedef struct dados_funcionario{
 }Dados_funcionario;
 
 void cadastra(int n, Dados_funcionario *f);
+void mostra(int n ,Dados_funcionario *f);
 
 int main(void){
     int n,count;
