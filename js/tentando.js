@@ -96,3 +96,32 @@ let b = 18;
 let mul = a * b;
 
 alert(mul);
+
+=======================================================================================================================
+  
+   const nomecompleto = prompt("digite seu nome completo");
+const anodenascimento = parseInt(prompt("digite o ano de nascimentto"));
+const salariomensal = parseFloat(prompt("digite seu salario mensal em reais: R$ "));
+const qtdfilhos = parseInt(prompt("digite a quantidade de filhos que voce tem: "));
+const idade = 2023 - anodenascimento;
+const  ate_se_aposentar = (salariomensal *12) * (70 - idade);
+
+ 
+if(qtdfilhos!=0){
+    const dividir = parseFloat(salariomensal/qtdfilhos);
+
+    console.log(`ola,${nomecompleto}, tudo bem ?\n voce tem ${idade} de idade,seu salario e R$${salariomensal.toFixed(2)} e recebera R$${ate_se_aposentar.toFixed(2)} ate se aposentar.\n caso voce deseje dividir seu salario entre seus filhos, dara ${dividir} para cada um.\n`);
+
+    alert(`ola,${nomecompleto}, tudo bem ?\n voce tem ${idade} de idade,seu salario e R$${salariomensal.toFixed(2)} e recebera R$${ate_se_aposentar.toFixed(2)} ate se aposentar.\n caso voce deseje dividir seu salario entre seus filhos, ${dividir}.\n`);
+
+}else{
+    const dividir = "voce nao tem filho";
+
+    console.log(`ola,${nomecompleto}, tudo bem ?\n voce tem ${idade} de idade,seu salario e R$${salariomensal.toFixed(2)} e recebera R$${ate_se_aposentar.toFixed(2)} ate se aposentar.\n caso voce deseje dividir seu salario entre seus filhos,${dividir}.\n`);
+
+    alert(`ola,${nomecompleto}, tudo bem ?\n voce tem ${idade} de idade,seu salario e R$${salariomensal.toFixed(2)} e recebera R$${ate_se_aposentar.toFixed(2)} ate se aposentar.\n caso voce deseje dividir seu salario entre seus filhos, ${dividir}.\n`);
+}
+
+==========================================================================================================================================================================================================================================================================================
+   
+   
