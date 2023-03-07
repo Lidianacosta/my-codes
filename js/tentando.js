@@ -124,4 +124,35 @@ if(qtdfilhos!=0){
 
 ==========================================================================================================================================================================================================================================================================================
    
+   const n = parseInt(prompt("digite um numero: "));
+console.log(`a potencia é ${Math.pow(n,3)}`);
+const n2 = parseInt(prompt("digite outro numero: "));
+console.log(`a raiz quadrada é ${Math.sqrt(n2)}`);
+
+const vetor = [];
+
+// vetor = parseInt(prompt("digite numeros"));
+
+//console.log(`o maior valor é ${math.max(...vetor)}`);
+//console.log(`o menor valor é ${math.min(...vetor)}`);
+
+==========================================================================================================================================================================================================================================================================================
    
+   //=========================== aula 4 ================================
+
+// if('8' != 8){
+//     console.log("is true");
+// }else if('8' == 8){
+//     console.log("is false"); 
+// }else{
+//     console.log("is not");
+// }
+
+// const data_nascimento = parseInt(prompt("digite sua data de nascimento: "));
+
+// const idade = parseInt((data_nascimento - 2023));
+
+// if (  >= 18) {
+
+// }
+ 
