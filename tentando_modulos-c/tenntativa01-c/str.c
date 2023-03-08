@@ -16,3 +16,15 @@ void copia(char* dest, char* orig){
     dest[i] = '\0';
 }
 
+void concatena(char *dest,char *orig){
+    int i=0;
+    int j;
+    while(dest[i]!='\0')
+        i++;
+    for(j=0;orig[j]!='\0';j++){
+            dest[i]=orig[j];
+            i++;
+    }
+    dest[i]='\0';
+}
+
